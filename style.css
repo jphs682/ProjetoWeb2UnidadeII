@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    background: ;
+    color: ;
+
+}
+
+header {
+    background-color: ;
+    padding: ;
+    display: ;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: 
+    
+}
+
+nav a: hover {
+    color: ;
+
+}
+
+header input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+button {
+    background: ;
+    border: ;
+    padding: ;
+    border-radius: ;
+    font-weight: ;
+    cursor: pointer;
+
+}
