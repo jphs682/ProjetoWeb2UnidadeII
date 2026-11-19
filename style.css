@@ -38,66 +38,44 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.login {
-  position: relative;
-}
-
-.login summary {
+.botao-login {
   background: #f9844a;
   color: #000000;
   padding: 10px 16px;
   border-radius: 8px;
-  cursor: pointer;
+  text-decoration: none;
   font-weight: bold;
-  list-style: none;
-}
-
-.login summary::-webkit-details-marker {
-  display: none;
-}
-
-.login form {
-  position: absolute;
-  right: 0;
-  top: 45px;
-  z-index: 1;
-  width: 230px;
-  padding: 15px;
-  background: #feeac7;
-  color: #003049;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.login input {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-}
-
-.destaques {
-  text-align: center;
-  background-color: #4d908e;
-  padding: 12px;
-  margin-top: 15px;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
   padding: 10px;
   background-color: #4d908e;
 }
 
-.livro {
+.grupo-livros {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.destaques {
+  width: 100%;
+  text-align: center;
+  background-color: #4d908e;
+  padding: 12px;
+  margin-top: 5px;
+}
+
+.grupo-livros article {
   width: 280px;
+}
+
+.livro {
+  height: 100%;
   padding: 15px;
-  margin: 10px;
   border-radius: 20px;
   background-color: #feeac7;
   text-align: center;
@@ -129,13 +107,74 @@ button {
   cursor: pointer;
 }
 
+footer {
+  background-color: #4d908e;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+/* Formulário da página de cadastro */
+.pagina-cadastro {
+  min-height: 100vh;
+}
+
+.formulario-cadastro {
+  width: 90%;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #feeac7;
+  color: #003049;
+  border-radius: 12px;
+}
+
+.formulario-cadastro h2 {
+  color: #003049;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-cadastro form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-cadastro label {
+  font-weight: bold;
+}
+
+.formulario-cadastro input,
+.formulario-cadastro select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.formulario-cadastro button {
+  margin-top: 10px;
+}
+
+.voltar {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  color: #003049;
+}
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
   }
 
-  .login form {
-    right: 50%;
-    transform: translateX(50%);
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
