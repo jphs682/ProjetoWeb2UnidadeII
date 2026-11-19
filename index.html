@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Vira Página - Livraria</title>
+</head>
+<body>
+  <header>
     <div class="titulo">
-      <h1> Vira Pagina </h1>
+      <h1>Vira Página</h1>
     </div>
+
     <nav>
-      <a href="">categorias</a>
-      <a href="">Contato</a>
+      <a href="#destaques">Destaques</a>
+      <a href="#mais-vendidos">Mais vendidos</a>
     </nav>
-      <h2 class="destaques">Livros em Destaque</h2>
-    <main>
 
-      <section>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMt76j895jT-kC3Kdtqr9kqqfUuXa9z8rQNZuJt3aUrw&s=10" alt="">
-          <h3>Dom Casmurro</h3>
-          <p>Autor: Machado de assis</p>
-          <p>Preço: R$ 29,90</p>
-          <p>Clássico da literatura brasileira sobre ciúme e memória.</p>
-          <button>Adicionar ao carinho</button>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5aUVNZcyVmuoUp7QjMI_PWtG8bdhcUEMHdy5N3k6Kg&s=10" alt="">
-          <h3>1984</h3>
-          <p>Autor: George Orwell</p>
-          <p>Preço: R$ 49,90</p>
-          <p>Distopia clássica sobre vigilância e controle totalitário.</p>
-          <button>Adicionar ao carinho</button>
-        </div>
-      </section>
-    </main>
+    <details class="login">
+      <summary>Login</summary>
+      <form>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
 
-<h2 class="destaques">Mais Vendidos</h2>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
 
- <main>
+        <button type="button">Entrar</button>
+      </form>
+    </details>
+  </header>
 
-      <section>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoJGPcT20RX4dnw2XV_EPYxEjD7C8DZfqwgvNJdcA5iw&s=10" class="img" alt="">
-          <h3>O monge e o executivo</h3>
-          <p>Autor: James C. Hunter </p>
-          <p>Preço: R$ 59,90</p>
-          <p>"Um livro fascinante que você não vai conseguir largar. " </p>
-          <button>Adicionar ao carinho</button>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5aUVNZcyVmuoUp7QjMI_PWtG8bdhcUEMHdy5N3k6Kg&s=10" alt="">
-          <h3>1984</h3>
-          <p>Autor: George Orwell</p>
-          <p>Preço: R$ 49,90</p>
-          <p>Distopia clássica sobre vigilância e controle totalitário.</p>
-          <button>Adicionar ao carinho</button>
-        </div>
-      </section>
-    </main>
+  <h2 class="destaques" id="destaques">Livros em Destaque</h2>
+  <main>
+    <section class="livro">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMt76j895jT-kC3Kdtqr9kqqfUuXa9z8rQNZuJt3aUrw&s=10" alt="Capa do livro Dom Casmurro">
+      <h3>Dom Casmurro</h3>
+      <p>Autor: Machado de Assis</p>
+      <p>Preço: R$ 29,90</p>
+      <p>Clássico da literatura brasileira sobre ciúme e memória.</p>
+      <button type="button">Adicionar ao carrinho</button>
+    </section>
 
-    </header>
-  </body>
+    <section class="livro">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5aUVNZcyVmuoUp7QjMI_PWtG8bdhcUEMHdy5N3k6Kg&s=10" alt="Capa do livro 1984">
+      <h3>1984</h3>
+      <p>Autor: George Orwell</p>
+      <p>Preço: R$ 49,90</p>
+      <p>Distopia clássica sobre vigilância e controle totalitário.</p>
+      <button type="button">Adicionar ao carrinho</button>
+    </section>
+  </main>
+
+  <h2 class="destaques" id="mais-vendidos">Mais Vendidos</h2>
+  <main>
+    <section class="livro">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoJGPcT20RX4dnw2XV_EPYxEjD7C8DZfqwgvNJdcA5iw&s=10" alt="Capa do livro O monge e o executivo">
+      <h3>O monge e o executivo</h3>
+      <p>Autor: James C. Hunter</p>
+      <p>Preço: R$ 59,90</p>
+      <p>Um livro sobre liderança e relações humanas.</p>
+      <button type="button">Adicionar ao carrinho</button>
+    </section>
+
+    <section class="livro">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW5aUVNZcyVmuoUp7QjMI_PWtG8bdhcUEMHdy5N3k6Kg&s=10" alt="Capa do livro 1984">
+      <h3>1984</h3>
+      <p>Autor: George Orwell</p>
+      <p>Preço: R$ 49,90</p>
+      <p>Distopia clássica sobre vigilância e controle totalitário.</p>
+      <button type="button">Adicionar ao carrinho</button>
+    </section>
+  </main>
+</body>
 </html>
