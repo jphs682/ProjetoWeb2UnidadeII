@@ -49,7 +49,7 @@ header {
   background: #f9844a;
   color: #000000;
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -60,6 +60,7 @@ nav {
   margin-top: 18px;
   padding-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border: solid 5px black;
 }
 
 nav a {
