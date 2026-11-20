@@ -113,7 +113,7 @@ main {
 }
 .livro p:last-of-type {
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Quantidade de linhas visíveis */
+    -webkit-line-clamp: 5; /* Quantidade de linhas visíveis */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
