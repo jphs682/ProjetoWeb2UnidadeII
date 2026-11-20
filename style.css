@@ -111,7 +111,7 @@ main {
   object-fit: contain;
   margin-bottom: 10px;
 }
-.livro p:last-of-type {
+.descricao {
     display: -webkit-box;
     -webkit-line-clamp: 5; /* Quantidade de linhas visíveis */
     -webkit-box-orient: vertical;
