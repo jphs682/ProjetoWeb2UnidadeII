@@ -111,6 +111,12 @@ main {
   object-fit: contain;
   margin-bottom: 10px;
 }
+.livro p:last-of-type {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Quantidade de linhas visíveis */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 h3 {
   color: #000000;
@@ -121,6 +127,7 @@ p {
   color: #003049;
   margin-bottom: 8px;
 }
+
 
 button {
   background: #f9844a;
