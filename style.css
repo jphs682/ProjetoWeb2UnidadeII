@@ -1,3 +1,12 @@
+root:{
+  --verde-floresta: #283D32;
+  --verde-folha: #496B50;
+  --papel: #F5EBD8;
+  --branco-quente: #FFFDF8;
+  --marron-escuro: #382D27;
+  --caramelo: #C58B55;
+  
+}
 * {
   margin: 0;
   padding: 0;
