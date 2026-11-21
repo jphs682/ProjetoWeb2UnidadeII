@@ -6,12 +6,17 @@
 }
 
 body {
+  /*  
   background: #90be6d;
   color: #ffffff;
+  */
+  background: #F5EBD8;
+  color: #382D27;
 }
 
 header {
-  background-color: #4d908e;
+  /*background-color: #4d908e;*/
+  background-color: #283D32;
   padding: 20px;
 }
 
@@ -46,8 +51,10 @@ header {
 }
 
 .botao-login {
-  background: #f9844a;
-  color: #000000;
+  /*background: #f9844a;
+  color: #000000;*/
+  background: #C58B55;
+  color: #FFFFFF;
   padding: 10px 16px;
   border-radius: 15px;
   text-decoration: none;
@@ -64,7 +71,8 @@ nav {
 }
 
 nav a {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #FFFDF8;
   text-decoration: none;
 }
 
@@ -74,7 +82,10 @@ nav a:hover {
 
 main {
   padding: 10px;
+  /*
   background-color: #4d908e;
+  */
+  background-color: #F5EBD8;
 }
 
 .grupo-livros {
@@ -89,7 +100,9 @@ main {
 .destaques {
   width: 100%;
   text-align: center;
-  background-color: #4d908e;
+  /*background-color: #4d908e;*/
+  background-color: #496B50;
+  color: #FFFDF8;
   padding: 12px;
   margin-top: 5px;
 }
@@ -102,7 +115,8 @@ main {
   height: 100%;
   padding: 15px;
   border-radius: 20px;
-  background-color: #feeac7;
+  /*background-color: #feeac7;*/
+  background-color: #FFFDF8;
   text-align: center;
 }
 
@@ -120,18 +134,22 @@ main {
 }
 
 h3 {
-  color: #000000;
+  /*color: #000000;*/
+  color: #382D27;
   margin-bottom: 8px;
 }
 
 p {
-  color: #003049;
+  /*color: #003049;*/
+  color: #382D27;
   margin-bottom: 8px;
 }
 
 
 button {
-  background: #f9844a;
+  /*background: #f9844a;*/
+  background: #C58B55;
+  color: #FFFFFF;
   border: none;
   padding: 10px;
   border-radius: 8px;
@@ -140,14 +158,16 @@ button {
 }
 
 footer {
-  background-color: #4d908e;
+  /*background-color: #4d908e;*/
+  background-color: #283D32;
   padding: 20px;
   text-align: center;
   margin-top: 15px;
 }
 
 footer p {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #FFFDF8;
 }
 
 /* Formulário da página de cadastro */
@@ -160,8 +180,12 @@ footer p {
   max-width: 450px;
   margin: 40px auto;
   padding: 25px;
+  /*
   background-color: #feeac7;
   color: #003049;
+  */
+  background-color: #FFFDF8;
+  color: #382D27;
   border-radius: 12px;
 }
 
