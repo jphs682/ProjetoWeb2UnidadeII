@@ -3,6 +3,7 @@ root:{
   --verde-folha: #496B50;
   --papel: #F5EBD8;
   --branco-quente: #FFFDF8;
+  --branco; #FFFFFF;
   --marron-escuro: #382D27;
   --caramelo: #C58B55;
   
@@ -19,7 +20,7 @@ body {
   background: #90be6d;
   color: #ffffff;
   */
-  background: #F5EBD8;
+  background: var(--branco-quente);
   color: #382D27;
 }
 
@@ -39,6 +40,7 @@ header {
 
 .titulo {
   font-size: 24px;
+  color: var(--branco-quente);
 }
 
 .pesquisa {
@@ -62,8 +64,8 @@ header {
 .botao-login {
   /*background: #f9844a;
   color: #000000;*/
-  background: #C58B55;
-  color: #FFFFFF;
+  background: var(--caramelo);
+  color: var(--branco);
   padding: 10px 16px;
   border-radius: 15px;
   text-decoration: none;
@@ -81,7 +83,7 @@ nav {
 
 nav a {
   /*color: #ffffff;*/
-  color: #FFFDF8;
+  color: var(--branco-quente);
   text-decoration: none;
 }
 
@@ -111,7 +113,7 @@ main {
   text-align: center;
   /*background-color: #4d908e;*/
   background-color: #496B50;
-  color: #FFFDF8;
+  color: var(--branco-quente);
   padding: 12px;
   margin-top: 5px;
 }
@@ -125,7 +127,7 @@ main {
   padding: 15px;
   border-radius: 20px;
   /*background-color: #feeac7;*/
-  background-color: #FFFDF8;
+  background-color: var(--branco-quente);
   text-align: center;
 }
 
@@ -157,8 +159,8 @@ p {
 
 button {
   /*background: #f9844a;*/
-  background: #C58B55;
-  color: #FFFFFF;
+  background: var(--caramelo);
+  color: var(--branco);
   border: none;
   padding: 10px;
   border-radius: 8px;
@@ -176,7 +178,7 @@ footer {
 
 footer p {
   /*color: #ffffff;*/
-  color: #FFFDF8;
+  color: var(--branco-quente);
 }
 
 /* Formulário da página de cadastro */
