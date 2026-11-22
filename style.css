@@ -140,6 +140,10 @@ main {
   
 }
 
+.livro button {
+  margin-top: auto;
+}
+
 h3 {
   color: var(--marron-escuro);
   margin-bottom: 8px;
