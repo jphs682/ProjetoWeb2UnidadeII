@@ -72,7 +72,7 @@ nav {
   gap: 20px;
   margin-top: 18px;
   padding-top: 12px;
-  border-top: 1px solid var(--branco-transparente);
+  border-top: 5px solid var(--branco-transparente);
 }
 
 nav a {
