@@ -51,7 +51,7 @@ header {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--cinza-claro);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .pesquisa button {
@@ -72,7 +72,7 @@ nav {
   gap: 20px;
   margin-top: 18px;
   padding-top: 12px;
-  border-top: 5px solid var(--branco-transparente);
+  border: 2px solid var(--branco-transparente);
 }
 
 nav a {
@@ -105,6 +105,7 @@ main {
   color: var(--branco-quente);
   padding: 12px;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
 .grupo-livros article {
