@@ -119,6 +119,8 @@ main {
   border-radius: 20px;
   background-color: var(--branco-quente);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .livro img {
@@ -127,6 +129,7 @@ main {
   object-fit: contain;
   margin-bottom: 10px;
 }
+
 
 .descricao {
   display: -webkit-box;
@@ -149,6 +152,7 @@ p {
 
 .preco{
     margin-top: 6px;
+    margin-bottom: 12px;
     color: var(--preco);
     font-size: 20px;
     font-weight: bold;
