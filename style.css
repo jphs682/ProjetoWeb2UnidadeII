@@ -8,6 +8,7 @@
   --caramelo: #C58B55;
   --cinza-claro: #cccccc;
   --branco-transparente: rgba(255, 255, 255, 0.3);
+  --preco:#2c3e50;
 }
 
 * {
@@ -144,6 +145,14 @@ p {
   margin-bottom: 8px;
 }
 
+.preco{
+    margin-top: 6px;
+    color: var(--preco);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
 button {
   background: var(--caramelo);
   color: var(--branco);
