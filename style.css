@@ -60,17 +60,16 @@ header {
 }
 
 nav .botao-login {
-  background: var(--verde-folha);
-  color: var(--branco);
-  padding: 10px 16px;
-  border-radius: 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav .botao-login:hover{
-  background:var(--caramelo);
+    background-color: var(--verde-folha);
+    padding: 8px 18px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
 }
 
+nav .botao-login:hover {
+    background-color: var(--caramelo);
+}
 nav {
   display: flex;
   gap: 20px;
