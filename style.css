@@ -59,13 +59,16 @@ header {
   white-space: nowrap;
 }
 
-.botao-login {
-  background: var(--caramelo);
+nav .botao-login {
+  background: var(--verde-folha);
   color: var(--branco);
   padding: 10px 16px;
   border-radius: 15px;
   text-decoration: none;
   font-weight: bold;
+}
+nav .botao-login:hover{
+  background:var(--caramelo);
 }
 
 nav {
