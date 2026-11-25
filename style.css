@@ -63,6 +63,8 @@ nav .botao-login {
     background-color: var(--verde-folha);
     padding: 8px 18px;
     border-radius: 5px;
+    borde:none;
+    margin-left:auto;
     color: white;
     text-decoration: none;
 }
