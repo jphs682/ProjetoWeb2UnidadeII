@@ -191,8 +191,9 @@ footer p {
 /* Formulário da página de cadastro */
 .pagina-cadastro {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
 .formulario-cadastro {
   width: 90%;
   max-width: 450px;
