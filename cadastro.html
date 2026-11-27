@@ -1,52 +1,152 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crie sua conta na livraria Vira Página.">
+  <title>Minha conta | Vira Página</title>
   <link rel="stylesheet" href="style.css">
-  <title>Cadastro - Vira Página</title>
+  <style>
+    .pagina-conta { min-height: 100vh; display: flex; flex-direction: column; }
+    .conta-main { width: min(100% - 32px, 980px); margin: 45px auto 60px; flex: 1; }
+    .conta-intro { margin-bottom: 25px; text-align: center; }
+    .conta-intro .etiqueta { color: var(--caramelo); }
+    .conta-intro h1 { margin: 8px 0; color: var(--verde-floresta); font: clamp(30px, 4vw, 40px) Georgia, serif; }
+    .conta-intro p { color: var(--cinza); }
+    .conta-card { display: grid; grid-template-columns: .8fr 1.2fr; overflow: hidden; border: 1px solid var(--borda); border-radius: 8px; background: white; box-shadow: 0 14px 35px #382d2710; }
+    .conta-lateral { padding: 38px 30px; background: var(--verde-floresta); color: var(--papel); }
+    .conta-lateral .simbolo { width: 54px; height: 54px; display: grid; place-items: center; margin-bottom: 25px; border: 1px solid #d9b98e; border-radius: 50%; color: #e4bc8e; font: italic 30px Georgia, serif; }
+    .conta-lateral h2 { margin-bottom: 12px; color: white; font: 27px/1.2 Georgia, serif; }
+    .conta-lateral p { color: #e2dfd5; font-size: 14px; }
+    .conta-lateral ul { margin: 25px 0 0; padding-left: 18px; color: #e2dfd5; font-size: 13px; }
+    .conta-formulario { padding: 35px; }
+    .conta-formulario h2 { margin-bottom: 5px; color: var(--verde-floresta); font: 25px Georgia, serif; }
+    .conta-formulario .apoio { margin-bottom: 24px; color: var(--cinza); font-size: 13px; }
+    .campos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .campo { display: flex; flex-direction: column; gap: 6px; }
+    .campo.largo { grid-column: 1 / -1; }
+    .campo label { color: var(--marrom); font-size: 13px; font-weight: bold; }
+    .campo input, .campo select { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--borda); border-radius: 4px; background: #fffdf9; color: var(--marrom); font: inherit; font-size: 14px; }
+    .campo input:focus, .campo select:focus { outline: 2px solid #c58b5570; border-color: var(--caramelo); }
+    .campo small { color: var(--cinza); font-size: 11px; }
+    .aceite { display: flex; align-items: flex-start; gap: 9px; margin: 20px 0; color: var(--cinza); font-size: 12px; }
+    .aceite input { margin-top: 3px; accent-color: var(--verde-folha); }
+    .aceite a, .entrar a { color: var(--verde-folha); font-weight: bold; }
+    .enviar { width: 100%; padding: 13px 18px; border: 0; border-radius: 4px; background: var(--verde-folha); color: white; font-weight: bold; cursor: pointer; transition: background .2s; }
+    .enviar:hover { background: var(--verde-floresta); }
+    .entrar { margin-top: 17px; color: var(--cinza); text-align: center; font-size: 13px; }
+    .voltar-inicio { display: inline-block; margin-top: 22px; color: var(--verde-folha); font-size: 13px; text-decoration: none; }
+    .voltar-inicio:hover { text-decoration: underline; }
+    @media (max-width: 700px) {
+      .conta-card { grid-template-columns: 1fr; }
+      .conta-lateral { padding: 25px; }
+      .conta-lateral .simbolo { margin-bottom: 15px; }
+      .conta-lateral ul { margin-top: 14px; }
+      .conta-formulario { padding: 25px 20px; }
+    }
+    @media (max-width: 480px) {
+      .campos { grid-template-columns: 1fr; }
+      .campo.largo { grid-column: auto; }
+      .conta-main { margin-top: 30px; }
+    }
+  </style>
 </head>
-<body class="pagina-cadastro">
-  <header>
-    <div class="titulo">
-      <h1>Vira Página</h1>
+<body class="pagina-conta">
+  <header class="topo">
+    <div class="cabecalho">
+      <a class="marca" href="index.html" aria-label="Vira Página - página inicial">
+        <span class="marca-icone">V</span>
+        <span>Vira Página<small>SUA PRÓXIMA HISTÓRIA COMEÇA AQUI</small></span>
+      </a>
+      <a class="link-conta" href="index.html">Voltar à loja</a>
     </div>
   </header>
 
-  <main class="formulario-cadastro">
-    <h2>Cadastro</h2>
+  <main class="conta-main">
+    <div class="conta-intro">
+      <span class="etiqueta">FAÇA PARTE DA NOSSA COMUNIDADE</span>
+      <h1>Crie sua conta</h1>
+      <p>Cadastre-se para acompanhar as novidades da Vira Página.</p>
+    </div>
 
-    <form action="#" method="get">
-      <label for="nome">Nome Completo</label>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <section class="conta-card" aria-label="Formulário de cadastro">
+      <aside class="conta-lateral">
+        <div class="simbolo" aria-hidden="true">V</div>
+        <h2>Uma nova história começa com você.</h2>
+        <p>Queremos conhecer seus gostos literários e ajudar você a encontrar sua próxima leitura.</p>
+        <ul>
+          <li>Conheça nossos livros e novidades.</li>
+          <li>Informe seus gêneros favoritos.</li>
+          <li>Tenha seus dados organizados em um só lugar.</li>
+        </ul>
+      </aside>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      <div class="conta-formulario">
+        <h2>Seus dados</h2>
+        <p class="apoio">Preencha os campos abaixo para realizar seu cadastro.</p>
 
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+        <form action="#" method="post">
+          <div class="campos">
+            <div class="campo largo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex.: Maria da Silva" autocomplete="name" required>
+            </div>
 
-      <label for="nascimento">Data de nascimento</label>
-      <input type="date" id="nascimento" name="nascimento" required>
+            <div class="campo largo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+            </div>
 
-      <label for="preferencia">Preferência de produtos</label>
-      <select id="preferencia" name="preferencia" required>
-        <option value="">Selecione uma preferência</option>
-        <option value="romance">Romance</option>
-        <option value="ficcao">Ficção</option>
-        <option value="fantasia">Fantasia</option>
-        <option value="aventura">Aventura</option>
-        <option value="nao-sei">Ainda não tenho preferência</option>
-      </select>
+            <div class="campo">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" name="nascimento" autocomplete="bday">
+            </div>
 
-      <button type="submit">Enviar cadastro</button>
-    </form>
+            <div class="campo">
+              <label for="preferencia">Gênero literário favorito</label>
+              <select id="preferencia" name="preferencia" required>
+                <option value="">Selecione uma opção</option>
+                <option value="romance">Romance</option>
+                <option value="ficcao">Ficção científica</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="aventura">Aventura</option>
+                <option value="suspense">Suspense</option>
+                <option value="autoajuda">Autoajuda</option>
+                <option value="outros">Outros / Ainda não sei</option>
+              </select>
+            </div>
 
-    <a class="voltar" href="index.html">Voltar para a página principal</a>
+            <div class="campo">
+              <label for="senha">Criar senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Mínimo de 8 caracteres" minlength="8" autocomplete="new-password" required>
+              <small>Use pelo menos 8 caracteres.</small>
+            </div>
+
+            <div class="campo">
+              <label for="confirmar-senha">Confirmar senha</label>
+              <input type="password" id="confirmar-senha" name="confirmar_senha" placeholder="Digite a senha novamente" minlength="8" autocomplete="new-password" required>
+            </div>
+          </div>
+
+          <label class="aceite">
+            <input type="checkbox" name="termos" required>
+            <span>Li e concordo com os termos de uso e com a política de privacidade.</span>
+          </label>
+
+          <button class="enviar" type="submit">Criar minha conta</button>
+        </form>
+
+        <p class="entrar">Já possui cadastro? <a href="#">Entre aqui</a></p>
+      </div>
+    </section>
+
+    <a class="voltar-inicio" href="index.html">← Voltar para a página inicial</a>
   </main>
-  <footer id="contato">
-    <p>Contato: entre em contato com a equipe da Vira Página.</p>
-    <p>&copy; 2026 Vira Página. Todos os direitos reservados.</p>
+
+  <footer>
+    <a class="marca marca-rodape" href="index.html"><span class="marca-icone">V</span><span>Vira Página</span></a>
+    <p>Entre páginas, descubra novos mundos.</p>
+    <small>&copy; 2026 Vira Página. Todos os direitos reservados.</small>
   </footer>
 </body>
 </html>
